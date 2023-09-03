@@ -1,0 +1,3 @@
+usage: main.py [-h] [--gamma GAMMA] [--dt DT] [--density DENSITY]
+               [--integrator INTEGRATOR] [--outDir OUTDIR] [--task_id TASK_ID]
+main.py: error: unrecognized arguments: --id 204

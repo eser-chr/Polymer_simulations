@@ -1,0 +1,40 @@
+
+              --------------              
+
+
+task_id = 2,  id = 202,  density = 0.1,  
+
+dt = 0.05,  gamma = 0.001,  integrator = dpd,  
+
+N = 1000,  L = 21.544346900318832,  T = 1,  
+
+Steps = 10000000,  spring_constant = 20.0,  snapshot = <gsd.hoomd.Snapshot object at 0x7f13ed2c62f0>,  
+
+sim = <hoomd.simulation.Simulation object at 0x7f13ed2c66b0>,  outDir = .,  particle_filter = ParticleFilter.Type,  
+
+thermo = <hoomd.md.compute.ThermodynamicQuantities object at 0x7f1436363cd0>,  lattice_file = ./lattice/202,  trajectory_file = ./trajectory/202,  
+              --------------              
+kin temp = 0.0, E_P/N = 4.835703591716503e-13
+run FIRE
+kin temp = 0.0002504686058606591, E_P/N = 0.00011141236710342914
+run FIRE
+kin temp = 0.0005574921048707281, E_P/N = 0.00021817396363900407
+run FIRE
+kin temp = 3.2230636635625062e-06, E_P/N = 2.280802648391944e-05
+run FIRE
+kin temp = 0.0001766381381692786, E_P/N = 1.7670795101395112e-05
+run FIRE
+kin temp = 2.5490545477838664e-05, E_P/N = 1.9950390445799976e-05
+run FIRE
+kin temp = 5.6972420194976486e-05, E_P/N = 1.4346274032496237e-05
+run FIRE
+kin temp = 8.216605649138565e-05, E_P/N = 1.8072661244809222e-05
+run FIRE
+kin temp = 5.205509902244802e-05, E_P/N = 2.4918065395297577e-05
+run FIRE
+kin temp = 0.0001107418952821687, E_P/N = 5.9846336603861614e-05
+run FIRE
+kin temp = 0.00027638131837498335, E_P/N = 0.00013262639949037587
+DPD
+kin temp = 0.9759487632823046, E_P/N = 0.5635278058703989
+1161.5340809822083

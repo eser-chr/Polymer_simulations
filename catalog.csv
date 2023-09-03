@@ -1,0 +1,2 @@
+id,N,L,steps,block_size,dt,gamma,A,intg,run_time,rho,kT
+0,100,10,100,10,0.01,1.0,3.0,langevin,0.4312164783477783,0.1,0.8000774383544922

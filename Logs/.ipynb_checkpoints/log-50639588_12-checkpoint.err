@@ -1,0 +1,18 @@
+/users/christofor.eseroglou/.conda/envs/chris/lib/python3.10/site-packages/numpy/core/numeric.py:2522: FutureWarning: elementwise comparison failed; returning scalar instead, but in the future will perform elementwise comparison
+  return bool(asarray(a1 == a2).all())
+**ERROR**: Particle with unique tag 42 is no longer in the simulation box.
+
+Cartesian coordinates: 
+x: -11.5052 y: 5.94721 z: 6.71371
+Fractional coordinates: 
+f.x: -0.0340238 f.y: 0.776045 f.z: 0.811623
+Local box lo: (-10.7722, -10.7722, -10.7722)
+          hi: (10.7722, 10.7722, 10.7722)
+Traceback (most recent call last):
+  File "/users/christofor.eseroglou/SCRIPTS/main.py", line 225, in <module>
+    obj.execute()
+  File "/users/christofor.eseroglou/SCRIPTS/main.py", line 204, in execute
+    self.sim.run(self.Steps)
+  File "/users/christofor.eseroglou/.conda/envs/chris/lib/python3.10/site-packages/hoomd/simulation.py", line 460, in run
+    self._cpp_sys.run(steps_int, write_at_start)
+RuntimeError: Error computing cell list

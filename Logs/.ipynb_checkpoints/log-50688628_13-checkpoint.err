@@ -1,0 +1,12 @@
+/users/christofor.eseroglou/.conda/envs/chris/lib/python3.10/site-packages/numpy/core/numeric.py:2522: FutureWarning: elementwise comparison failed; returning scalar instead, but in the future will perform elementwise comparison
+  return bool(asarray(a1 == a2).all())
+Traceback (most recent call last):
+  File "/users/christofor.eseroglou/SCRIPTS/main.py", line 227, in <module>
+    obj.execute()
+  File "/users/christofor.eseroglou/SCRIPTS/main.py", line 204, in execute
+    self.pira()
+  File "/users/christofor.eseroglou/SCRIPTS/main.py", line 184, in pira
+    print(f'kin temp = {self.thermo.kinetic_temperature}, E_P/N = {self.thermo.potential_energy / self.N}')
+  File "/users/christofor.eseroglou/.conda/envs/chris/lib/python3.10/site-packages/hoomd/logging.py", line 464, in wrapped_func
+    raise DataAccessError(name)
+hoomd.error.DataAccessError: The property kinetic_temperature is unavailable until the simulation runs for 0 or more steps.

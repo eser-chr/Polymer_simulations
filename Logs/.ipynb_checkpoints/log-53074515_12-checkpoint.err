@@ -1,0 +1,4 @@
+  File "/var/spool/slurm/job53074528/slurm_script", line 23
+    return basename in os.listdir('./trajectory'):
+                                                 ^
+SyntaxError: invalid syntax

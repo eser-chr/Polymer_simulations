@@ -1,0 +1,6 @@
+Traceback (most recent call last):
+  File "/users/christofor.eseroglou/SCRIPTS/main.py", line 221, in <module>
+    obj = Simulation(density = args.density, dt = args.dt, gamma = args.gamma,
+  File "/users/christofor.eseroglou/SCRIPTS/main.py", line 56, in __init__
+    self.id = change()
+NameError: name 'change' is not defined. Did you mean: 'range'?

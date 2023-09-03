@@ -1,0 +1,4 @@
+/users/christofor.eseroglou/.conda/envs/chris/lib/python3.10/site-packages/scipy/__init__.py:146: UserWarning: A NumPy version >=1.16.5 and <1.23.0 is required for this version of SciPy (detected version 1.23.1
+  warnings.warn(f"A NumPy version >={np_minversion} and <{np_maxversion}"
+/users/christofor.eseroglou/.conda/envs/chris/lib/python3.10/site-packages/numpy/core/numeric.py:2522: FutureWarning: elementwise comparison failed; returning scalar instead, but in the future will perform elementwise comparison
+  return bool(asarray(a1 == a2).all())

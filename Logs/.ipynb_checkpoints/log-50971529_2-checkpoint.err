@@ -1,0 +1,17 @@
+/users/christofor.eseroglou/.conda/envs/chris/lib/python3.10/site-packages/numpy/core/numeric.py:2522: FutureWarning: elementwise comparison failed; returning scalar instead, but in the future will perform elementwise comparison
+  return bool(asarray(a1 == a2).all())
+Traceback (most recent call last):
+  File "/users/christofor.eseroglou/SCRIPTS/main.py", line 230, in <module>
+    obj.execute()
+  File "/users/christofor.eseroglou/SCRIPTS/main.py", line 205, in execute
+    self.create_sim()
+  File "/users/christofor.eseroglou/SCRIPTS/main.py", line 158, in create_sim
+    self.sim.create_state_from_gsd(filename = self.lattice_file)
+  File "/users/christofor.eseroglou/.conda/envs/chris/lib/python3.10/site-packages/hoomd/simulation.py", line 203, in create_state_from_gsd
+    self._init_system(step)
+  File "/users/christofor.eseroglou/.conda/envs/chris/lib/python3.10/site-packages/hoomd/simulation.py", line 124, in _init_system
+    self._state._cpp_sys_def.setSeed(self._seed)
+TypeError: setSeed(): incompatible function arguments. The following argument types are supported:
+    1. (self: hoomd._hoomd.SystemDefinition, arg0: int) -> None
+
+Invoked with: <hoomd._hoomd.SystemDefinition object at 0x7f797d8674f0>, 79334

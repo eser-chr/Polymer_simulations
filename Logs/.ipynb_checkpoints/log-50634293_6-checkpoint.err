@@ -1,0 +1,13 @@
+Traceback (most recent call last):
+  File "/users/christofor.eseroglou/SCRIPTS/main.py", line 233, in <module>
+    obj.execute()
+  File "/users/christofor.eseroglou/SCRIPTS/main.py", line 210, in execute
+    self.write_snapshot()        
+  File "/users/christofor.eseroglou/SCRIPTS/main.py", line 123, in write_snapshot
+    with gsd.hoomd.open(name = self.lattice_file, mode = 'wb') as f:
+  File "/users/christofor.eseroglou/.conda/envs/chris/lib/python3.10/site-packages/gsd/hoomd.py", line 1087, in open
+    gsdfileobj = fl.open(name=str(name),
+  File "gsd/fl.pyx", line 235, in gsd.fl.open
+  File "gsd/fl.pyx", line 375, in gsd.fl.GSDFile.__init__
+  File "gsd/fl.pyx", line 48, in gsd.fl.__raise_on_error
+RuntimeError: Corrupt GSD file: ./lattice/101

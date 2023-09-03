@@ -1,0 +1,133 @@
+{
+ "cells": [
+  {
+   "cell_type": "code",
+   "execution_count": 11,
+   "id": "3c64c019-2841-4aed-8ea8-cec5cb09645c",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "import pickle"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 12,
+   "id": "b5615772-d98b-4b75-aad4-423aa543360f",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "A = [0,0]\n",
+    "f = open('ID','wb')"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 14,
+   "id": "e303ea99-6220-4618-9057-4cf7a15215a2",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "pickle.dump(A,f)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 16,
+   "id": "56409695-b6d0-4472-8f22-dfcce77dc9b1",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "def program(it:int):\n",
+    "    with open('ID','rb') as f:\n",
+    "        A = pickle.load(f)\n",
+    "    print(A)    \n",
+    "    A[0]+=A[1]\n",
+    "    A[1] = it\n",
+    "    print(A)\n",
+    "    with open('ID','wb') as f:\n",
+    "        pickle.dump(A,f)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 30,
+   "id": "517a89c2-7104-43b9-8b3c-667a531b3c93",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "f = open('ID','rb')"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 31,
+   "id": "7bdfa892-afe7-4d74-8311-95975e04fafb",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "[14, 1]"
+      ]
+     },
+     "execution_count": 31,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "B = pickle.load(f)\n",
+    "B"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 29,
+   "id": "c29d8ba0-70ca-4285-aa4d-728dd0c78f3e",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "[10, 4]\n",
+      "[14, 1]\n"
+     ]
+    }
+   ],
+   "source": [
+    "program(1)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "ad8d3294-7717-42c5-a35c-ab727bccbbe3",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "Python 3",
+   "language": "python",
+   "name": "python3"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.9.12"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 5
+}

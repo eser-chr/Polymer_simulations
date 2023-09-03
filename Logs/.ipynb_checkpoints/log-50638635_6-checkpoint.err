@@ -1,0 +1,4 @@
+Traceback (most recent call last):
+  File "/users/christofor.eseroglou/SCRIPTS/main.py", line 223, in <module>
+    task_id = args.task_idm , ide = args.id)
+AttributeError: 'Namespace' object has no attribute 'task_idm'. Did you mean: 'task_id'?

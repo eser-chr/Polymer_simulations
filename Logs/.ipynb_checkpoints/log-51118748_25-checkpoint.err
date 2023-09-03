@@ -1,0 +1,3 @@
+usage: main.py [-h] [--N N] [--L L] [--steps STEPS] [--dt DT] [--gamma GAMMA]
+               [--integrator INTEGRATOR] [--id ID]
+main.py: error: argument --steps: invalid int value: '1000.0'

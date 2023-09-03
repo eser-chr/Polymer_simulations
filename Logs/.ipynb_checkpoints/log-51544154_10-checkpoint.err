@@ -1,0 +1,10 @@
+/users/christofor.eseroglou/.conda/envs/chris/lib/python3.10/site-packages/numpy/core/numeric.py:2522: FutureWarning: elementwise comparison failed; returning scalar instead, but in the future will perform elementwise comparison
+  return bool(asarray(a1 == a2).all())
+Traceback (most recent call last):
+  File "/users/christofor.eseroglou/SCRIPTS/main.py", line 216, in <module>
+    obj.execute()
+  File "/users/christofor.eseroglou/SCRIPTS/main.py", line 194, in execute
+    self.sim.run(self.Steps)
+  File "/users/christofor.eseroglou/.conda/envs/chris/lib/python3.10/site-packages/hoomd/simulation.py", line 460, in run
+    self._cpp_sys.run(steps_int, write_at_start)
+RuntimeError: GSD: Disk quota exceeded - ./trajectory/10.gsd
